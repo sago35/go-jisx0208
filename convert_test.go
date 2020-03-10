@@ -15,14 +15,15 @@
 package jisx0208_test
 
 import (
-	. "github.com/hajimehoshi/go-jisx0208"
 	"testing"
+
+	. "github.com/sago35/go-jisx0208"
 )
 
 func TestConvert(t *testing.T) {
 	testCases := []struct {
-		input int
-		expectRune rune
+		input       int
+		expectRune  rune
 		expectError bool
 	}{
 		{0x2121, '　', false},
